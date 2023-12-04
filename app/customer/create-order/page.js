@@ -367,9 +367,9 @@ export default function Page() {
 						}}
 					>
 						<option value=''>Select a time...</option>
-						<option value='now'>Now</option>
-						<option value='in 35 minutes'>In 35 minutes</option>
-						<option value='tomorrow'>Tomorrow</option>
+						<option value='Now'>Now</option>
+						<option value='In 35 minutes'>In 35 minutes</option>
+						<option value='Tomorrow'>Tomorrow</option>
 					</select>
 				</div>
 
