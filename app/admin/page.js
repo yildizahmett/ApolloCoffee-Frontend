@@ -97,7 +97,7 @@ export default function Page() {
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 
-	const modal = document.getElementById('myModal');
+	const modal = document?.getElementById('myModal');
 
 	window.onclick = function (event) {
 		if (event.target == modal) {
@@ -134,7 +134,7 @@ export default function Page() {
 					return;
 				}
 
-				const modal = document.getElementById('myModal');
+				const modal = document?.getElementById('myModal');
 				modal.style.display = 'none';
 
 				setTimeout(() => {
@@ -196,7 +196,7 @@ export default function Page() {
 				<button
 					className='bg-black hover:bg-neutral-700 text-white font-bold py-2 px-4 rounded-md transition-colors'
 					onClick={() => {
-						const modal = document.getElementById('myModal');
+						const modal = document?.getElementById('myModal');
 						modal.style.display = 'block';
 					}}
 				>
@@ -268,7 +268,7 @@ export default function Page() {
 						</span>
 						<span
 							onClick={() => {
-								const modal = document.getElementById('myModal');
+								const modal = document?.getElementById('myModal');
 								modal.style.display = 'none';
 							}}
 							className='text-2xl font-extrabold text-neutral-500 hover:text-black no-underline cursor-pointer transition-colors'
