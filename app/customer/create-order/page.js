@@ -161,12 +161,15 @@ export default function Page() {
 		return coffees.find((coffee) => coffee.id === coffeeId);
 	};
 
-	const modal = document?.getElementById('myModal');
-	window.onclick = function (event) {
-		if (event.target == modal) {
-			modal.style.display = 'none';
-		}
-	};
+	if (typeof document !== 'undefined') {
+		const modal = document?.getElementById('myModal');
+
+		window.onclick = function (event) {
+			if (event.target == modal) {
+				modal.style.display = 'none';
+			}
+		};
+	}
 
 	return (
 		<main className='flex min-h-screen flex-col items-center justify-start gap-12 p-24'>
@@ -383,8 +386,10 @@ export default function Page() {
 							return;
 						}
 
-						const modal = document?.getElementById('myModal');
-						modal.style.display = 'block';
+						if (typeof document !== 'undefined') {
+							const modal = document?.getElementById('myModal');
+							modal.style.display = 'block';
+						}
 					}}
 				>
 					Make Order
@@ -402,8 +407,10 @@ export default function Page() {
 						</span>
 						<span
 							onClick={() => {
-								const modal = document?.getElementById('myModal');
-								modal.style.display = 'none';
+								if (typeof document !== 'undefined') {
+									const modal = document?.getElementById('myModal');
+									modal.style.display = 'none';
+								}
 							}}
 							className='text-2xl font-extrabold text-neutral-500 hover:text-black no-underline cursor-pointer transition-colors'
 						>
