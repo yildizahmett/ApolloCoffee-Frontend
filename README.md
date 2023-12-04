@@ -16,4 +16,4 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-Alternatively, you can visit my already hosted website through this link: [https://asdasdsad](https://asdasdsad)
+Alternatively, you can visit my already hosted website through this link: [https://apollo-coffee-frontend.vercel.app/](https://apollo-coffee-frontend.vercel.app/)
