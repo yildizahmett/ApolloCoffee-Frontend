@@ -62,7 +62,7 @@ export default function Page() {
 			return;
 		}
 
-		fetch(`${process.env.NEXT_PUBLIC_API_URL}/admin/get-coffees`, {
+		fetch(`${process.env.NEXT_PUBLIC_API_URL_ADMIN}/admin/get-coffees`, {
 			method: 'GET',
 			headers: {
 				'Content-Type': 'application/json',
@@ -112,7 +112,7 @@ export default function Page() {
 
 		const token = loadState('admin_token');
 
-		await fetch(`${process.env.NEXT_PUBLIC_API_URL}/admin/add-coffee`, {
+		await fetch(`${process.env.NEXT_PUBLIC_API_URL_ADMIN}/admin/add-coffee`, {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json',
@@ -163,7 +163,7 @@ export default function Page() {
 	const handleDelete = async (id) => {
 		const token = loadState('admin_token');
 
-		await fetch(`${process.env.NEXT_PUBLIC_API_URL}/admin/delete-coffee`, {
+		await fetch(`${process.env.NEXT_PUBLIC_API_URL_ADMIN}/admin/delete-coffee`, {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json',
