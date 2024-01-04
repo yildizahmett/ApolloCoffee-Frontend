@@ -22,7 +22,7 @@ export default function Page() {
 			return;
 		}
 
-		fetch(`${process.env.NEXT_PUBLIC_API_URL}/customer/get-coffees`, {
+		fetch(`${process.env.NEXT_PUBLIC_API_URL_CUSTOMER}/customer/get-coffees`, {
 			method: 'GET',
 			headers: {
 				'Content-Type': 'application/json',
@@ -49,7 +49,7 @@ export default function Page() {
 				console.log(error);
 			});
 
-		fetch(`${process.env.NEXT_PUBLIC_API_URL}/customer/get-user`, {
+		fetch(`${process.env.NEXT_PUBLIC_API_URL_CUSTOMER}/customer/get-user`, {
 			method: 'GET',
 			headers: {
 				'Content-Type': 'application/json',
@@ -82,7 +82,7 @@ export default function Page() {
 			deliver_time: deliverTime,
 		};
 
-		fetch(`${process.env.NEXT_PUBLIC_API_URL}/customer/make-order`, {
+		fetch(`${process.env.NEXT_PUBLIC_API_URL_CUSTOMER}/customer/make-order`, {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json',
