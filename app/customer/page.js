@@ -52,7 +52,7 @@ export default function Page() {
 			return;
 		}
 
-		fetch(`${process.env.NEXT_PUBLIC_API_URL}/customer/get-coffees`, {
+		fetch(`${process.env.NEXT_PUBLIC_API_URL_CUSTOMER}/customer/get-coffees`, {
 			method: 'GET',
 			headers: {
 				'Content-Type': 'application/json',
