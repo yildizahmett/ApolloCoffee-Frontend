@@ -16,7 +16,7 @@ export default function Page() {
 			return;
 		}
 
-		fetch(`${process.env.NEXT_PUBLIC_API_URL}/customer/get-orders`, {
+		fetch(`${process.env.NEXT_PUBLIC_API_URL_CUSTOMER}/customer/get-orders`, {
 			method: 'GET',
 			headers: {
 				'Content-Type': 'application/json',
