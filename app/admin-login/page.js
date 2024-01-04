@@ -17,7 +17,7 @@ export default function Page() {
 			return;
 		}
 
-		await fetch(`${process.env.NEXT_PUBLIC_API_URL}/admin/login`, {
+		await fetch(`${process.env.NEXT_PUBLIC_API_URL_ADMIN}/admin/login`, {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json',
